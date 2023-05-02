@@ -1,0 +1,31 @@
+<app-nav></app-nav>
+<div style="height: 86vh;background-image: url('../../assets/bg-2.jpg');background-size: cover;" class="d-flex justify-content-around align-items-center">
+    <div class="col-4 p-5 text-light"></div>
+    <div class="card col-7 p-3 " style="background-color: rgba(0, 0, 0, 0.53); color: white;width: 35vw;">
+        <form class="mt-4">
+          <h3 class="text-danger">{{message}}</h3>
+            <h2 class="text-center mb-5">Sign Up</h2>
+            <div class="row mb-5 mx-auto">
+                <!-- <label for="inputName3" class="col-sm-3 col-form-label">Name</label> -->
+                <div class="col-sm-8 w-100">
+                  <input name="name" [(ngModel)]="name" type="text" class="form-control" id="inputName3" placeholder="Username">
+                </div>
+              </div>
+            <!-- <div class="row mb-5 mx-auto"> -->
+              <!-- <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label> -->
+              <!-- <div class="col-sm-8 w-100">
+                <input name="email" [(ngModel)]="email" type="text" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div> -->
+            <div class="row mb-5 mx-auto">
+              <!-- <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label> -->
+              <div class="col-sm-8 w-100">
+                <input name="password" [(ngModel)]="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success" (click)="onClick()">Register</button>
+            </div>Already Registered? <a routerLink="/home" class="text-light fw-bolder fs-4">Login</a>
+          </form>
+    </div>
+</div>

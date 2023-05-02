@@ -1,0 +1,27 @@
+<app-nav></app-nav>
+<div style="height: 85vh;background-image: url('../../assets/bg-2.jpg');background-size: cover;" class="d-flex justify-content-around align-items-center">
+    <div style="z-index:1;background-color: rgba(0, 0, 0, 0.545)" class="col-7 p-5 fw-bolder fs-2 rounded-pill text-light align-self-start mt-5">Welcome to our website where you can check if your plant is getting proper 
+      nourishment or not!
+    </div>
+    <div class="card col-4 p-3 align-self-start mt-5" style="background-color: rgba(0, 0, 0, 0.762);">
+        <form class="mt-4">
+            <h2 class="text-center mb-5 text-light">LOGIN</h2><hr/>
+            <h3 class="text-danger">{{message}}</h3>
+            <div class="row mb-5 mx-auto">
+              <!-- <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label> -->
+              <div class="col-sm-8 w-100">
+                <input name = "email" [(ngModel)]="email" type="text" class="form-control" id="inputEmail3" placeholder="Username">
+              </div>
+            </div>
+            <div class="row mb-5 mx-auto">
+              <!-- <label for="inputPassword3" class="col-sm-3 col-form-label">Password:</label> -->
+              <div class="col-sm-8 w-100">
+                <input name="password" [(ngModel)]="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success" (click)="onClick()">Sign In</button>
+            </div>
+          </form>
+    </div>
+</div>
